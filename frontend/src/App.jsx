@@ -6,7 +6,7 @@ function App() {
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-        fetch("http://localhost:3000/api/courses")
+        fetch("https://exp16-mern-cloud-app.onrender.com/api/courses")
             .then((response) => response.json())
             .then((data) => {
                 setCourses(data);
